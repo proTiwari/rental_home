@@ -5,7 +5,7 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import { Typography } from '@material-ui/core';
 import { CardActions } from '@material-ui/core';
-import Footer from './Footer';
+import Footer from './Footer/Footer';
 
 
 const useStyles = makeStyles((theme) => ({
