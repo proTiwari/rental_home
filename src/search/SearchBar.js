@@ -68,13 +68,13 @@ const useStyles = makeStyles((theme) => ({
     },
     sectionDesktop: {
         display: 'none',
-        [theme.breakpoints.up('md')]: {
+        [theme.breakpoints.up('1792')]: {
             display: 'flex',
         },
     },
     sectionMobile: {
         display: 'flex',
-        [theme.breakpoints.up('md')]: {
+        [theme.breakpoints.up('1792')]: {
             display: 'none',
         },
     },
@@ -88,14 +88,19 @@ export default function SearchBar() {
 
 
     return (
-        <div><br/>
+        <div><br />
             <Card className={classes.root} variant="outlined">
                 <CardContent style={{ margin: '0rem' }} >
                     <br /><br />
-                    <Typography variant='h6'>Search location where you want a room/flat on rent</Typography>
                     <br /><br />
-                    <AppBar position="relative" color="white" >
-                        <Toolbar className={classes.dont_show_search}>
+                    <Typography variant='h6'>Search location where you want a room/flat on rent
+                        <br /><br />
+
+                        <Toolbar style={{
+                            borderBottomStyle: "solid", width: "55rem", alignContent: "center", margin: "auto",
+                            width: "80%",
+                            padding: "3px", borderBottomColor: "1px red"
+                        }} className={classes.dont_show_search}>
                             <div className={classes.search} >
                                 <div className={classes.searchIcon}>
                                     <RoomIcon />
@@ -110,25 +115,25 @@ export default function SearchBar() {
                                 />
                             </div>
                         </Toolbar>
-                    </AppBar>
+
+                    </Typography>
                 </CardContent>
             </Card>
 
-            <br/><br/>
+            <br /><br />
 
             <Card className={classes.root} variant="outlined">
                 <CardContent style={{ margin: '0rem' }} >
-                <br/><br/>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
                     <Button variant="contained" color="secondary">
-                        
-
-                        post your rental service here
+                       post your rental service here
                     </Button>
                 </CardContent>
             </Card>
