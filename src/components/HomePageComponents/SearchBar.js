@@ -7,7 +7,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import { Typography } from '@material-ui/core';
-import Button from '@material-ui/core/Button';
+import PostYourRentalServices from './PostYourRentalServices';
+
 
 
 const useStyles = makeStyles((theme) => ({
@@ -118,24 +119,8 @@ export default function SearchBar() {
                     </Typography>
                 </CardContent>
             </Card>
-
             <br /><br />
-
-            <Card className={classes.root} variant="outlined">
-                <CardContent style={{ margin: '0rem' }} >
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <Button variant="contained" color="secondary">
-                       post your rental service here
-                    </Button>
-                </CardContent>
-            </Card>
+            <PostYourRentalServices />
         </div>
     );
 }
