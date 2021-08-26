@@ -156,7 +156,7 @@ const socialIcons = [
 function Footer(props) {
   const { classes, theme, width } = props;
   return (
-    <footer style={{marginTop:'14rem'}} className="lg-p-top">
+    <footer style={{marginTop:'24rem'}} className="lg-p-top">
 
       <hr/>
       <div className={classes.footerInner}>
