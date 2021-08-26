@@ -13,9 +13,9 @@ import {
 } from "@material-ui/core";
 import PhoneIcon from "@material-ui/icons/Phone";
 import MailIcon from "@material-ui/icons/Mail";
-import WaveBorder from "./WaveBorder";
+import WaveBorder from "../../pageComponents/Home/WaveBorder";
 import transitions from "@material-ui/core/styles/transitions";
-import ColoredButton from "./ColoredButton";
+import ColoredButton from "../../atoms/ColoredButton/ColoredButton";
 
 const styles = theme => ({
   footerInner: {
