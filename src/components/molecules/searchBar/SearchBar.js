@@ -6,7 +6,11 @@ import RoomIcon from '@material-ui/icons/Room';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
-import { Paper, Typography } from '@material-ui/core';
+import Divider from '@material-ui/core/Divider';
+import IconButton from '@material-ui/core/IconButton';
+import MenuIcon from '@material-ui/icons/Menu';
+import SearchIcon from '@material-ui/icons/Search';
+import DirectionsIcon from '@material-ui/icons/Directions';
 
 const useStyles = makeStyles((theme) => ({
 
@@ -59,24 +63,16 @@ export default function SearchBar() {
     const classes = useStyles();
 
     return (
-        <Toolbar style={{
-            borderBottomStyle: "solid", width: "55rem", alignContent: "center", margin: "auto",
-            padding: "3px", borderBottomColor: "1px red"
-        }} className={classes.dont_show_search}>
-            <div className={classes.search} >
-                <div className={classes.searchIcon}>
-                    <RoomIcon />
-                </div>
-                <InputBase
-                    placeholder="Search…"
-                    classes={{
-                        root: classes.inputRoot,
-                        input: classes.inputInput,
-                    }}
-                    inputProps={{ 'aria-label': 'search' }}
-                />
-            </div>
-        </Toolbar>
+       <div>
+           <InputBase style={{borderBottom:'1px solid'}}
+                      className={classes.inputInput}
+                      placeholder="Search Google Maps"
+                      inputProps={{ 'aria-label': 'search google maps' }}
+           />
+           <IconButton type="submit" className={classes.iconButton} aria-label="search">
+               <SearchIcon />
+           </IconButton>
+       </div>
 
     );
 }
