@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
     },
 
     leg: {
-
+        marginTop: 'auto',
         display: 'inlineBlock',
         color: 'white',
         textAlign: 'center',
@@ -37,6 +37,7 @@ function NearbyRoomsSuggestions() {
 
 
                 <div style={{ overflowY: 'hidden', display: 'flex' }} class="scrollmenu">
+
                     <div className={classes.leg} ><Card className={classes.leg} variant="outlined">
                         <CardContent>
                             <Button>click here</Button><Typography>this is typography</Typography>
@@ -89,8 +90,6 @@ function NearbyRoomsSuggestions() {
                     </Card></div>
 
                 </div>
-
-
             </div>
         </div>
     )
