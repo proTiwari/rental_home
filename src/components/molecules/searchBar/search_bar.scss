@@ -1,0 +1,8 @@
+@import "src/css/main";
+#search_bar_container {
+  padding: 1em;
+
+  @include sm {
+    padding: 4em;
+  }
+}

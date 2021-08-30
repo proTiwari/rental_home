@@ -1,9 +1,9 @@
 import React from 'react';
-import { alpha } from '@material-ui/core/styles';
 import InputBase from '@material-ui/core/InputBase';
 import { makeStyles } from '@material-ui/core/styles';
 import IconButton from '@material-ui/core/IconButton';
 import SearchIcon from '@material-ui/icons/Search';
+import './search_bar.scss'
 
 const useStyles = makeStyles((theme) => ({
 
@@ -26,7 +26,7 @@ export default function SearchBar() {
     const classes = useStyles();
 
     return (
-        <div style={{padding:'04rem'}}>
+        <div id="search_bar_container" >
             <InputBase  style={{ borderBottom: '1px solid' , width:'80%'}}
                 className={classes.inputInput}
                 placeholder="Search Google Maps"
