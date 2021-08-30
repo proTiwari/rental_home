@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import HomePage from './pages/Home/HomePage';
 import {
   Switch,
@@ -13,12 +13,9 @@ function App() {
       <MainLayout>
         <Router>
           <Switch>
-
             <Route path="/">
               <HomePage />
             </Route>
-
-
           </Switch>
         </Router>
       </MainLayout>
