@@ -157,7 +157,7 @@ function Footer(props) {
   return (
     <footer className="lg-p-top">
 
-      <hr/>
+      <hr />
       <div className={classes.footerInner}>
         <Grid container spacing={isWidthUp("md", width) ? 10 : 5}>
           <Grid item xs={12} md={6} lg={4}>
@@ -222,7 +222,7 @@ function Footer(props) {
               About the Company
             </Typography>
             <Typography style={{ color: "#8f9296" }} paragraph>
-            The purpose of our service is to provide our
+              The purpose of our service is to provide our
               users the best rental service in their area.
             </Typography>
             <Box display="flex">
