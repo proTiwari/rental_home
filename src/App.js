@@ -13,12 +13,9 @@ function App() {
       <MainLayout>
         <Router>
           <Switch>
-
             <Route path="/">
               <HomePage />
             </Route>
-
-
           </Switch>
         </Router>
       </MainLayout>
