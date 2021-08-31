@@ -13,6 +13,7 @@ import MailIcon from '@material-ui/icons/Mail';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import MoreIcon from '@material-ui/icons/MoreVert';
 import SearchBar from '../searchBar/SearchBar';
+import ThemeSwitch from '../../atoms/ThemeSwitch';
 
 const useStyles = makeStyles((theme) => ({
     grow: {
@@ -162,6 +163,7 @@ export default function NavBar() {
 
     return (
         <div className={classes.grow}>
+            <ThemeSwitch />
             <AppBar position="static">
                 <Toolbar>
                     <IconButton

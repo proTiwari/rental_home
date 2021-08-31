@@ -6,10 +6,12 @@ import {
   Route
 } from "react-router-dom";
 import MainLayout from "./Layouts/MainLayout";
+import { ThemeProvider } from 'next-themes'
 
 function App() {
   return (
-    <div className="App">
+    <div className='App'>
+    <ThemeProvider attribute="class" enableSystem={false}>
       <MainLayout>
         <Router>
           <Switch>
@@ -20,6 +22,7 @@ function App() {
         </Router>
       </MainLayout>
 
+      </ThemeProvider>
     </div>
   );
 }
