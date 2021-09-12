@@ -27,7 +27,7 @@ function NearbyRoomsSuggestions() {
 
 
         <div className={classes.root} >
-            <Typography variant="h4" >Rooms available near you.</Typography>
+         
             <div style={{
                 overflow: 'auto',
                 whiteSpace: 'nowrap',

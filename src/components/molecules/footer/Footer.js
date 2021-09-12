@@ -16,6 +16,7 @@ import MailIcon from "@material-ui/icons/Mail";
 import transitions from "@material-ui/core/styles/transitions";
 import ColoredButton from "../../atoms/ColoredButton/ColoredButton";
 
+
 const styles = theme => ({
   footerInner: {
     backgroundColor: theme.palette.common.darkBlack,
@@ -178,10 +179,12 @@ function Footer(props) {
                   />
                 </Box>
                 <ColoredButton
-                  color={theme.palette.common.black}
+                  color={props.textColor ? theme.palette.common.black : theme.palette.common.white}
+                  
                   variant="outlined"
                   type="submit"
                 >
+                   {console.log(props.textColor)}
                   Send Message
                 </ColoredButton>
               </Box>
