@@ -104,8 +104,6 @@ export default function NavBar() {
     change ? setChange(false) : setChange(true);
   };
 
-  <Footer textColor={change} />;
-
   return (
     <div >
 

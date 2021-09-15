@@ -12,6 +12,7 @@ function App() {
   return (
     <div className='App'>
     <ThemeProvider attribute="class" enableSystem={false}>
+
       <MainLayout>
         <Router>
           <Switch>

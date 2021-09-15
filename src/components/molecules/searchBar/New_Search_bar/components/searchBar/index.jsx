@@ -12,13 +12,12 @@ import { Button } from "@material-ui/core";
 import RoomIcon from "@material-ui/icons/Room";
 
 const SearchBarContainer = styled(motion.div)`
-  display: flex;
-  flex-direction: column;
+  display: inline-block;
   width: 40em;
-  height: 3.8em;
   background-color: #fff;
   border-radius: 3px;
-  box-shadow: 0px 2px 12px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 12px 3px rgba(0, 0, 0, 0.1);
+  position: relative;
 `;
 
 const SearchInputContainer = styled.div`
@@ -83,11 +82,11 @@ const LineSeperator = styled.span`
 
 const SearchContent = styled.div`
   width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
+  height: 80em;
+  box-sizing: border-box;
   padding: 1em;
   overflow-y: auto;
+  position: absolute;
 `;
 
 const LoadingWrapper = styled.div`
@@ -156,7 +155,6 @@ export function SearchBar(props) {
     <div style={{ display: "flex" }}>
       <SearchBarContainer
         animate={isExpanded ? "expanded" : "collapsed"}
-        variants={containerVariants}
         transition={containerTransition}
         ref={parentRef}
       >
@@ -187,7 +185,15 @@ export function SearchBar(props) {
                 </CloseIcon>
               )}
             </AnimatePresence>
+
           </SearchInputContainer>
+          <Button
+              variant="contained"
+              color="secondary"
+              startIcon={<RoomIcon/>}
+              style={{marginLeft: "0.1rem"}}
+              align="center"
+          />
         </div>
 
         {isExpanded && <LineSeperator />}
@@ -226,13 +232,6 @@ export function SearchBar(props) {
         )}
       </SearchBarContainer>
 
-      <Button
-        variant="contained"
-        color="secondary"
-        startIcon={<RoomIcon />}
-        style={{ marginLeft: "0.1rem" }}
-        align="center"
-      ></Button>
     </div>
   );
 }

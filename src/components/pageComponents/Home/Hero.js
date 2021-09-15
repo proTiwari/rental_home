@@ -4,7 +4,7 @@ import { Paper, Typography } from "@material-ui/core";
 import Card from "@material-ui/core/Card";
 import { alpha, makeStyles } from "@material-ui/core/styles";
 import styled from "styled-components";
-import { SearchBar } from "../../molecules/searchBar/New_Search_bar/components/searchBar/index";
+import SearchBar from "../../molecules/searchBar";
 
 const AppContainer = styled.div`
   width: 100%;
