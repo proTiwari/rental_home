@@ -220,9 +220,9 @@ export function SearchBar(props) {
               <>
                 {tvShows.map(({ show }) => (
                   <TvShow
-                    key={show.id}
+                    key={anything}
                     thumbanilSrc={show.image && show.image.medium}
-                    name={show.name}
+                    name={"name here"}
                     rating={show.rating && show.rating.average}
                   />
                 ))}
