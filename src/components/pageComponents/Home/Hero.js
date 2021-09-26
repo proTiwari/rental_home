@@ -46,11 +46,13 @@ function Hero(props) {
           style={{
             backgroundImage: `url(${family})`,
             backgroundRepeat: "no-repeat",
-            backgroundSize: "100% 100%",
+            backgroundSize: "100vw 100vw",
+            position:"relative",
+            top:"50px",
             class: "responsive",
           }}
         >
-          <CardContent style={{ paddingTop: "5rem", paddingBottom: "0rem" }}>
+          <CardContent style={{ paddingTop: "2rem", paddingBottom: "0rem" }}>
             <Typography
               style={{ paddingRight: "0rem", color: "white" }}
               variant="h5"

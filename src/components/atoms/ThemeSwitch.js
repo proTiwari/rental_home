@@ -12,18 +12,20 @@ const ThemeSwitch = () => {
         black: dark
       }
     const [open,setOpen] = useState(true)
+    const [image, setImage] = useState(imagesPath['black'])
 
     const getImageName = () => open ? 'black' : 'light'
-    // When mounted on client, now we can show the UI
-    useEffect(() => setMounted(true), [])
+    let imageName = getImageName()
+    // // When mounted on client, now we can show the UI
+     useEffect(() => setImage, [open])
 
-    const imageName = getImageName();
+    
 
     return (
       
         <img
-            src={imagesPath[imageName]} 
-            onClick={() => setOpen(open ? 'false':'true')}
+            src={open? imagesPath['black'] : imagesPath['light']} 
+            onClick={() => setOpen(!open)}
             width={40}
             height={40}
             aria-label="Toggle Dark Mode"
