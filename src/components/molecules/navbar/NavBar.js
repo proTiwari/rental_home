@@ -10,8 +10,8 @@ import AccountCircle from "@material-ui/icons/AccountCircle";
 import NotificationsIcon from "@material-ui/icons/Notifications";
 import MoreIcon from "@material-ui/icons/MoreVert";
 import ThemeSwitch from "../../atoms/ThemeSwitch";
-import Footer from "../footer/Footer";
-import Image from "../../../components/pageComponents/d.jpg";
+
+
 
 const useStyles = makeStyles((theme) => ({
   grow: {
@@ -129,7 +129,7 @@ export default function NavBar() {
                 aria-label="show 4 new mails"
                 color="inherit"
               >
-                <Badge color="secondary">
+                <Badge >
                   <ThemeSwitch />
                 </Badge>
               </IconButton>
