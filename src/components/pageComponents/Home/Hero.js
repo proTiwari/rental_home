@@ -3,6 +3,7 @@ import CardContent from "@material-ui/core/CardContent";
 import { Paper, Typography } from "@material-ui/core";
 import Card from "@material-ui/core/Card";
 import { alpha, makeStyles } from "@material-ui/core/styles";
+import Button from '@material-ui/core/Button';
 import styled from "styled-components";
 import SearchBar from "../../molecules/searchBar";
 import d from "../../../images/d.svg";
@@ -24,6 +25,10 @@ const useStyles = makeStyles((theme) => ({
     height: "88vh",
     paddingTop: 50,
   },
+
+  buttons:{
+    height:"3rem",width:"9rem",fontSize:"17px", fontFamily: "Arial", border:"none",color:"white", backgroundColor:"#F25A87"
+  }
 }));
 
 function Hero(props) {
@@ -44,9 +49,10 @@ function Hero(props) {
           elevation={0}
           className={classes.root}
           style={{
-            backgroundImage: `url(${family})`,
+            //backgroundImage: `url(${family})`,
             backgroundRepeat: "no-repeat",
             backgroundSize: "100vw 100vw",
+            MozImageRegion: "auto",
             position:"relative",
             top:"50px",
             class: "responsive",
@@ -63,6 +69,7 @@ function Hero(props) {
             <AppContainer>
               <SearchBar />
             </AppContainer>
+            
           </CardContent>
         </div>
       </Card>

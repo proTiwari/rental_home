@@ -5,6 +5,7 @@ import RoomIcon from "@material-ui/icons/Room";
 import IconButton from "@material-ui/core/IconButton";
 import { useClickOutside } from "react-click-outside-hook";
 import useUserLocation from "../../../hooks/useUserLocation";
+import Button from "@material-ui/core/Button";
 
 function SearchBar(props) {
   const [isExpanded, setExpanded] = useState(false);
@@ -52,12 +53,20 @@ function SearchBar(props) {
         </div>
         <IconButton
           variant="contained"
-          color="secondary"
           align="center"
           className={styles.search_btn}
-          onClick={() => getLocation()}
+          // onClick={() => getLocation()}
         >
           <RoomIcon />
+        </IconButton>
+
+        <IconButton
+          variant="contained"
+          align="center"
+          className={styles.search_btn2}
+          onClick={() => getLocation()}
+        >
+          Explore nearby
         </IconButton>
       </div>
 

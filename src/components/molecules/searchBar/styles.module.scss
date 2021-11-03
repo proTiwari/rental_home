@@ -61,9 +61,26 @@ $border-radius: 8px;
       height: 100%;
       padding-left: 20px;
       padding-right: 20px;
-      border-radius: 0 $border-radius $border-radius 0;
+      border-style: solid;
+      border-width:2px;
+      border-radius: 0  0;   //$border-radius
 
     }
+
+    .search_btn2 {
+      background-color: #f50057;
+      color: rgb(255, 255, 255);
+      height: 100%;
+      padding-left: 10px;
+      padding-right: 10px;
+      font-size: 1.2rem;
+      border-style: solid;
+      border-color: white;
+      border-width:2px;
+      border-radius: 0 $border-radius $border-radius 0;   //$border-radius
+
+    }
+
   }
 
   .dropdown_container {
@@ -73,7 +90,7 @@ $border-radius: 8px;
     width: inherit;
     height: 20em;
     margin-top: 4px;
-    color: #282c34;
+    color: #000000;
     text-align: start;
     border-radius: $border-radius;
     box-shadow: 0 2px 12px 3px rgba(0, 0, 0, 0.1);
