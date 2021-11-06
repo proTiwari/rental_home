@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import MainLayout from "./Layouts/MainLayout";
 import { ThemeProvider } from 'next-themes';
+import RentalRegistration from "../src/pages/Registration/RentalRegistration";
 
 function App() {
   return (
@@ -16,8 +17,11 @@ function App() {
       <MainLayout textColor="next-themes">
         <Router>
           <Switch>
-            <Route path="/">
+            <Route exact path="/">
               <HomePage />
+            </Route>
+            <Route exact path="/reg">
+              <RentalRegistration />
             </Route>
           </Switch>
         </Router>
