@@ -6,14 +6,14 @@ import {
   Route
 } from "react-router-dom";
 import MainLayout from "./Layouts/MainLayout";
-import { ThemeProvider } from 'next-themes'
+import { ThemeProvider } from 'next-themes';
 
 function App() {
   return (
     <div className='App'>
     <ThemeProvider attribute="class" enableSystem={false}>
 
-      <MainLayout>
+      <MainLayout textColor="next-themes">
         <Router>
           <Switch>
             <Route path="/">
