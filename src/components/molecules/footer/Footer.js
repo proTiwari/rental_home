@@ -9,7 +9,8 @@ import {
   withStyles,
   withWidth,
   isWidthUp,
-  TextField
+  TextField,
+  Button
 } from "@material-ui/core";
 import PhoneIcon from "@material-ui/icons/Phone";
 import MailIcon from "@material-ui/icons/Mail";
@@ -178,14 +179,14 @@ function Footer(props) {
                     required
                   />
                 </Box>
-                <ColoredButton
-                  color={props.textColor ? theme.palette.common.black : theme.palette.common.white}               
+                <button
+                               
                   variant="outlined"
                   type="submit"
                 >
                    {console.log(props.textColor)}
                   Send Message
-                </ColoredButton>
+                </button>
               </Box>
             </form>
           </Grid>
